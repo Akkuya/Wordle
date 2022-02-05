@@ -1,6 +1,9 @@
 from termcolor import colored
 import random
 import sys
+import os
+
+os.system('color')
 
 def generate():
     wordFile = open('words.txt', "r")
@@ -36,7 +39,7 @@ while generate.guessed == False:
 
     
     
-    print(f"{colored(guess[0], 'grey', colours[0])} {colored(guess[1], 'grey', colours[1])} {colored(guess[2], 'grey', colours[2])} {colored(guess[3], 'grey', colours[3])} {colored(guess[4], 'grey', colours[4])}")
+    print(f"{colored(guess[0], 'white', colours[0])} {colored(guess[1], 'white', colours[1])} {colored(guess[2], 'white', colours[2])} {colored(guess[3], 'white', colours[3])} {colored(guess[4], 'white', colours[4])}")
     if count == 5:
         guessed = True
         print(f'Good Job!')
